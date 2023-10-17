@@ -24,7 +24,7 @@ PARAM$variables_intrames  <- TRUE   # atencion esto esta en TRUE
 
 #valores posibles  
 #  "ninguno" "rank_simple" , "rank_cero_fijo" , "deflacion", "estandarizar"
-PARAM$metodo  <- "deflacion"
+PARAM$metodo  <- "estandarizar"
 
 PARAM$home  <- "~/buckets/b1/"
 # FIN Parametros del script
@@ -215,7 +215,7 @@ drift_estandarizar <- function(campos_drift) {
   {
     cat(campo, " ")
     dataset[, paste0(campo, "_normal") := 
-      (get(campo) -mean(get(campo), na.rm=TRUE)) / sd(get(campo), na.rm=TRUE),
+      (get(campo) /mean(get(campo), na.rm=TRUE)),
       by = foto_mes]
 
     dataset[, (campo) := NULL]
