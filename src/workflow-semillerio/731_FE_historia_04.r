@@ -24,7 +24,7 @@ require("lightgbm")
 PARAM  <- list()
 PARAM$experimento <- "FE7310_04"
 
-PARAM$exp_input  <- "DR7210_04"
+PARAM$exp_input  <- "DR7210_04  "
 
 PARAM$lag1  <- TRUE
 PARAM$lag2  <- TRUE
@@ -56,8 +56,8 @@ PARAM$RandomForest$min.node.size  <- 1000
 PARAM$RandomForest$mtry  <- 40
 PARAM$RandomForest$semilla  <- 287629    # cambiar por la propia semilla
 
-#PARAM$RandomForest$splitrule <- "hellinger"
-#PARAM$RandomForest$sample.fraction <- 0.8
+PARAM$RandomForest$splitrule <- "hellinger"
+PARAM$RandomForest$sample.fraction <- 0.8
 
 PARAM$CanaritosAsesinos$ratio  <- 2.0        #varia de 0.0 a 2.0, si es 0.0 NO se activan
 PARAM$CanaritosAsesinos$desvios  <- 0.1     #desvios estandar de la media, para el cutoff
