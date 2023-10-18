@@ -18,3 +18,6 @@ source("~/dm2023b/src/workflow-semillerio/741_TS_training_strategy_03.r")
 # ultimos pasos, muy lentos
 source("~/dm2023b/src/workflow-semillerio/751_HT_lightgbm_03.r")
 source("~/dm2023b/src/workflow-semillerio/795_ZZ_final_semillerio_03.r")
+source("~/dm2023b/src/workflow-semillerio/795_ZZ_final_semillerio_031.r") #cambio la semilla
+
+source("~/dm2023b/src/workflow-semillerio/796_HB_semillerios_hibridacion_03.r")
